@@ -32,7 +32,7 @@ example-3.ts
 
 # Typescript 4
 
-While typescript will infer a type. It is best practice most often to explicity type thing. 
+While typescript will infer a type. It is best practice most often to explicitly type thing. 
 
 The sample wants to build two arrays, one with random numbers and the other with random characters. Since this is Typescript you need to add the types.
 
@@ -75,8 +75,3 @@ When would you use this:
 Challenge: Write an enum for a card type. Make the example code work by adding an Enum for Suit and defining `ace` of spades!
 
 example-7.ts
-
-
-
-
-
