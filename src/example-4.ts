@@ -26,3 +26,8 @@ console.log(chars)
 
 // Compile the code and check what type script says:
 // tsc example-4.ts
+
+export {
+  random,
+  randomChar
+}

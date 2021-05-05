@@ -16,3 +16,7 @@ console.log(printCopy('hello', 3))
 
 // Compile the code and check what type script says:
 // tsc example-3.ts
+
+export {
+  printCopy
+}
