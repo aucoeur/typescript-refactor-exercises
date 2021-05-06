@@ -1,20 +1,29 @@
 
-// Functions have types add the types for the 
-// functions returned below: 
+// Functions have types add the types for the
+// functions returned below:
 
-// This function returns a function that returns a number
+// This function returns a function that returns a number (closure)
 
-function count() {
+function count(): () => number {
 	let n = 0
 	return () => {
+		// console.log(n)
 		return n += 1
 	}
 }
 
+const c = count()
+console.log(c())
+console.log(c())
+
+const d = count()
+console.log(d())
+console.log(d())
+
 // This function takes an array and returns an item from
 // the array
 
-function next(arr) {
+function next(arr: any[]): () => any {
 	let i = -1
 	return () => {
 		i += 1
@@ -23,14 +32,15 @@ function next(arr) {
 	}
 }
 
-// This function returns a function that generates a 
-// die roll. 
+// This function returns a function that generates a
+// die roll.
 
-function dice(sides) {
-	return (n) => {
+function dice(sides: number): (n: number) => number {
+	return (n: number): number => {
 		return Math.floor(Math.random() * sides) * n
 	}
 }
+
 
 export {
 	count,
